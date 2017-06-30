@@ -1,0 +1,245 @@
+@import "bootstrap.less";
+
+body{
+  padding-top:50px;
+  font-family:"simhei";
+}
+.of-hidden{
+  overflow:hidden;
+}
+#nav{
+  a.navbar-brand,.icon-lg{
+    background:url(../img/hdr-spr.png) no-repeat;
+  }
+  a.navbar-brand{
+    width:70px;
+    height:44px;
+    background-position: 7px -512px;
+    margin:4px 10px 0 0;
+  }
+  /*dropdow-toggle 菜单样式*/
+  a.dropdown-toggle{
+    display: inline-block;
+    height:50px;
+    line-height:50px;
+    background:#0081d5;
+    text-decoration:none;
+    padding:0 60px 0 20px;
+  }
+  ul.dropdown-menu{
+    border-radius:0;
+    margin:0;
+  }
+  .glyphicon{
+    color:#000;
+  }
+  .icon-lg{
+    display: inline-block;
+    width:14px;
+    height:14px;
+    vertical-align: middle;
+    background-position:0 -180px;
+  }
+  .navbar-nav a{
+    color:#fff;
+    font-weight:bold;
+  }
+  .login{
+    color:#000;
+    .panel{
+      width:400px;
+    .panel-body{
+      h2{
+        font-weight:bold;
+      }
+      color:#333;
+    }
+    }
+  }
+}
+#main{
+  .border-left{
+    border-left:1px solid #12a4ed;
+  }
+  .top-20{
+    margin-top:20px;
+  }
+  .caret-left{
+    display:inline-block;
+    width:11px;
+    height:11px;
+    background:url(../img/sprite-carets.png) no-repeat 0 -377px;
+    vertical-align: middle;
+  }
+  /*@media (min-width:@screen-sm-min) {
+    div.img-title{
+      position:absolute;
+      bottom: 0;
+      left:15px;
+      width:96%;
+      padding:34px;
+    }
+  }*/
+  div.img-title{
+    position:absolute;
+    bottom: 35px;
+    left:49px;
+    width:86%;
+  }
+  div.mask{
+    position:absolute;
+    top:77%;
+    left:15px;
+    height:100%;
+    width:92.5%;
+    padding:10px 10px;
+    background:rgba(0,0,0,0.7);
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    -o-transition: top 0.5s;
+    transition: top 0.5s;
+    &:hover{
+      top:0;
+    }
+    .caret-up{
+      position:absolute;
+      top:20px;
+      right:20px;
+      width:12px;
+      height:10px;
+      background:url(../img/sprite-carets.png) no-repeat -11px -591px;
+    }
+  }
+  div.media{
+    background:#0171c5;
+    padding: 25px 20px;
+    div.media-body{
+      padding-left:12px;
+      li{
+        line-height: 30px;
+      }
+    }
+    img{
+      height:80%;
+    }
+  }
+  @media screen and (min-width:993px) and (max-width:1200px){
+    div.mask{
+      width:90.7%;
+      padding-top:3px;
+      span.caret-up{
+        top:16px;
+      }
+    }
+    div.media{
+      padding:22px 0 22px 12px;
+      div.media-body{
+        li{
+          line-height:24px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width:768px) and (max-width:992px) {
+    div.mask{
+      width:92%;
+      padding-top:5px;
+    }
+    div.media{
+      padding:37px 20px;
+      img{
+        height:100%;
+      }
+      div.media-body{
+        li{
+          line-height:24px;
+        }
+      }
+    }
+    div.mask{
+      top:79%;
+      width:91.9%;
+      padding-top:5px;
+      span.caret-up{
+        top:16px;
+      }
+    }
+    div.col-md-12.col-sm-6{
+      margin-top:10px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    div.mask{
+      width:93%;
+      padding-top:12px;
+    }
+    div.img-title{
+      position:static;
+      width:100%;
+      background:#0171c5;
+      padding:10px 10px 20px;
+      button{
+        padding:5px 30px;
+      }
+    }
+    img.img-responsive{
+      width:100%;
+    }
+    div.col-md-4.col-sm-12{
+      margin-top:14px;
+    }
+    div.media{
+      img{
+        height:100%;
+      }
+      div.media-body{
+        padding:0 15px;
+        li{
+          line-height:30px;
+        }
+      }
+    }
+  }
+
+}
+#footer{
+  color:#333;
+  background:#fff;
+  margin-top:50px;
+  padding-top:25px;
+  ul{
+    li{
+      line-height:40px;
+    }
+  }
+  a{
+    color:#0080d4;
+  }
+  p.logo{
+    padding-left:20px;
+    margin-top: 20px;
+    span{
+      color:#ccc;
+      padding-left:20px;
+    }
+  }
+  .icon-wb,.icon-sq{
+    display: inline-block;
+    vertical-align: middle;
+    width:20px;
+    height:20px;
+    background:url(../img/social_sprite_smushed.png) no-repeat;
+    margin-right:10px;
+  }
+  .icon-sq{
+    background-position:0 -70px;
+  }
+  .icon-wb{
+    background-position: 0 -770px;
+  }
+  @media screen and (max-width:992px){
+    div.col-md-3.col-xs-6:nth-child(3){
+      clear: both;
+    }
+  }
+}
